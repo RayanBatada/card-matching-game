@@ -1,0 +1,142 @@
+#root {
+  width: 100%; /* Allow full width */
+  height: 100%; /* Ensure full height for the background */
+  margin: 0; /* Remove any outer margins */
+  padding: 0; /* Remove padding */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.game-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Align content to the top */
+  padding-top: 20px; /* Add space between the top and the title */
+  background: url('/images/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.game-content {
+  transform: scale(1.5);
+  text-align: center;
+}
+
+.game-title {
+  margin-bottom: 100px; /* Space below the title */
+  margin-top: 0; /* Ensure no extra margin at the top */
+  text-align: center;
+}
+
+.card-placeholder,
+.card,
+.deck-image {
+  width: 150px; /* Card width */
+  height: 200px; /* Card height */
+  display: flex; /* Enable centering content inside */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  background-color: lightgray; /* Placeholder background */
+  border: 1px solid #ccc; /* Card border */
+  border-radius: 8px; /* Rounded corners for cards */
+  font-weight: bold; /* Bold text for placeholders */
+  font-size: 18px; /* Text size for placeholders */
+}
+
+.deck-image {
+  width: 150px; /* Match card size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+.card img {
+  width: 150px; /* Adjust this value to make the image bigger */
+  height: 200px; /* Adjust this value to make the image bigger */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+
+h1 {
+  margin-bottom: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.scoreboard {
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center horizontally */
+  gap: 20px; /* Add space between items */
+  margin-top: 20px; /* Add space above the row */
+}
+
+.actions {
+  display: flex; /* Align buttons horizontally */
+  justify-content: center; /* Center buttons */
+  gap: 74px; /* Space between buttons */
+  margin-top: 30px; /* Add space above buttons */
+}
+
+.btn {
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Button font size */
+  border-radius: 5px; /* Rounded corners for buttons */
+  border: 1px ;
+  border-width: 10px;
+  background-color: black;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.game-messages {
+  margin-bottom: 25px;
+  margin-top: 25px; /* Space above messages */
+}
