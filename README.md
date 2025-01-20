@@ -31,7 +31,7 @@ To run the game locally on your machine:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/rayan-batada/card-matching-game.git
+   git clone https://github.com/RayanBatada/card-matching-game.git
    cd card-matching-game
 
 ## Credits
