@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Card Matching Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Card Matching Game**, an exciting and interactive browser-based game where you test your luck and score points by matching cards based on their **rank**, **suit**, or **color**. This project was built using **React**, styled with **CSS**, and offers an intuitive, responsive design.
 
-Currently, two official plugins are available:
+## Features 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic Gameplay**: Draw cards, and score points for matching rank, suit, or color.
+- **Deck Shuffling**: Cards automatically shuffle when the deck runs out.
+- **Visual Appeal**: Custom card designs (from Figma, background images, and responsive layout for a smooth user experience.
+- **Live Feedback**: Real-time updates on matches, scores, and game status.
+- **Cooldown Mechanism**: Prevents spamming the draw button for smoother gameplay.
 
-## Expanding the ESLint configuration
+## How to Play 🕹️
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Start the Game**: Open the app in your browser.
+2. **Draw Cards**: Click the **Draw Cards** button to reveal two cards.
+3. **Score Points**:
+   - Match cards by their **rank**, **suit**, or **color** to earn points.
+4. **Shuffle the Deck**: Click the **Shuffle** button to reshuffle the deck if you’d like.
+5. **Restart Anytime**: Use the **Restart** button to reset the game and score.
 
-- Configure the top-level `parserOptions` property like this:
+## Built With 🛠️
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Frontend**: React, TypeScript
+- **Styling**: CSS (with Bootstrap)
+- **Version Control**: Git and GitHub
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Installation 🖥️
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+To run the game locally on your machine:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/RayanBatada/card-matching-game.git
+   cd card-matching-game
+   ```
+
+## Credits
+
+- Card designs sourced from [https://www.figma.com/design/eq8xKZ6L5DdFUdyK2DtCsL/Classic-Playing-Cards-(Community)?node-id=1-49546&p=f&t=1OFXfDSI3r0axiiW-0](url).
+- Background image inspired by casino table designs.
